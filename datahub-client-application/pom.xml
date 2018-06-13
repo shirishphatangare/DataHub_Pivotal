@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>employee-main-app</artifactId>
+	<artifactId>datahub-client-application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>employee-main-app</name>
+	<name>datahub-client-application</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

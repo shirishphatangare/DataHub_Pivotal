@@ -1,6 +1,6 @@
 spring:
   application:
-    name: employee-main-app
+    name: datahub-client-application
   mvc: 
     view: 
       prefix: /WEB-INF/jsp/

@@ -24,26 +24,65 @@
 <table class="table table-striped">
     <thead>
     <tr>
-    <th scope="col">Id</th>
-    <th scope="col">Name</th>
-    <th scope="col">Role</th>
-    <th scope="col">Manager</th>
-    <th scope="col"> </th>
+    <th scope="col" style="background-color: #cc66ff;">Employee Details</th>
     </tr>
     </thead>
     <tbody>
     
     <tr>
-    	<th scope="row"><a href="/empDetails/${employee.id}"> ${employee.id} </a></th>
-        <td>${employee.name}</td>
-        <td>${employee.role}</td>
-        <td> <a href="/empHierarchy/${employee.manager}"> ${employee.manager} </a></td>
+        <td>${employee.firstname} ${employee.lastname}</td>
     </tr>
-
+    <tr>
+        <td>${employee.role}</td>
+    </tr>
+    <tr>
+    	<td><B>FedEx ID: </B> <a href="/empDetails/${employee.id}"> ${employee.id} </a></td>
+    </tr>
+    
+    <tr>
+        <td> Manager: <a href="/empHierarchy/${employee.manager}">  ${manager.firstname} ${manager.lastname}</a></td>
+    </tr>
+<tr>
+    <th style="background-color: #cc66ff;" scope="col">Contact Information</th>
+    </tr>
+    
+    <tr>
+        <td><B>Phone:</B> ${employee.phone}</td>
+    </tr>
+    <tr>
+        <td><B>Email:</B> ${employee.email}</td>
+    </tr>
+    
+    <tr>
+    <th scope="col" style="background-color: #cc66ff;">Work Address</th>
+    </tr>
+    <tr>
+        <td>${employee.address1}</td>
+    </tr>
+    <tr>
+        <td>${employee.address2}</td>
+    </tr>
+    <tr>
+        <td>${employee.city}</td>
+    </tr>
+        <tr>
+        <td>${employee.state}</td>
+    </tr>
+    
+        <tr>
+        <td>${employee.zip}</td>
+    </tr>
+        <tr>
+        <td>${employee.country}</td>
+    </tr>
+    
+    
     </tbody>
   </table>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<a style="float:right" href="https://employee-master-service-dev.cfapps.io/swagger-ui.html">Swagger Documentation</a>
+	<a style="float:right" href="https://employee-master-service-dev.cfapps.io/hystrix">Hystrix DashBoard</a>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="${pageContext.request.contextPath}/js/employeeDetails.js"></script>
 </body>
 </html>

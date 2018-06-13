@@ -1,4 +1,5 @@
-package com.example.employeedatadashboard;
+
+package com.example.datahubclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,15 +13,15 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @SpringBootApplication
-public class EmployeeMainApplication extends SpringBootServletInitializer {
+public class DataHubClient extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EmployeeMainApplication.class, args);
+		SpringApplication.run(DataHubClient.class, args);
 	}
 	
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(EmployeeMainApplication.class);
+		return application.sources(DataHubClient.class);
 	}
 	
 	@Bean
@@ -36,5 +37,4 @@ public class EmployeeMainApplication extends SpringBootServletInitializer {
 	    resolver.setViewClass(JstlView.class);
 	    return resolver;
 	}
-	 
 }
