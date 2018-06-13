@@ -1,0 +1,5 @@
+applications:
+- name: employee-master-service
+  path: ./target/employee-master-service-0.0.1-SNAPSHOT.jar
+  host: employee-master-service-dev
+  instances: 1

@@ -18,21 +18,21 @@ zuul:
   sensitive-headers: Cookie,Set-Cookie
   ignoredServices: "*"
   routes:
-    employee-dashboard-service: 
+    employee-master-service: 
       path: /dashboard/**
-      serviceId: employee-dashboard-service
+      serviceId: employee-master-service
       stripPrefix: false
-    employee-dashboard-service-feign: 
+    employee-master-service-feign: 
       path: /dashboard-feign/**
-      serviceId: employee-dashboard-service
+      serviceId: employee-master-service
       stripPrefix: false
-    employee-service: 
+    employee-details-service: 
       path: /employee/**
-      serviceId: employee-service
+      serviceId: employee-details-service
       stripPrefix: false
-    manager-service: 
+    employee-hierarchy-service: 
       path: /manager/**
-      serviceId: manager-service
+      serviceId: employee-hierarchy-service
       stripPrefix: false
   host:
     socket-timeout-millis: 10000 
