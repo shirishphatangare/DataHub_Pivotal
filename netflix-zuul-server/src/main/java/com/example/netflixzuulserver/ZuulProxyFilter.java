@@ -20,6 +20,7 @@ public class ZuulProxyFilter extends ZuulFilter {
 		// TODO Auto-generated method stub
 		HttpServletRequest request = RequestContext.getCurrentContext().getRequest();
 		logger.info("Logging Request URI - " + request.getRequestURI());
+		System.out.println("*********** STEP 1 - ZUUL PROXY SERVER ****************");
 		return null;
 	}
 

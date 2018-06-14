@@ -32,20 +32,15 @@ public class EmployeeDetailsController {
 	   
 	  @RequestMapping("/employee/find/{id}")
 	   public EmployeeInfo findById(@PathVariable(value = "id") long id, @RequestHeader("Authorization") String bearerToken){
+		  System.out.println("*********** STEP 3 - EMPLOYEE DETAILS SERVICE ****************");
 		  Optional <Employee> emp = employeeRepository.findById(id);
 		  EmployeeInfo empInfo = new EmployeeInfo(emp.get().getId(),emp.get().getFirstname(),emp.get().getLastname(),emp.get().getRole(),emp.get().getManager(),emp.get().getPhone(),emp.get().getEmail(),emp.get().getAddress1(),emp.get().getAddress2(),emp.get().getCity(),emp.get().getState(),emp.get().getZip(),emp.get().getCountry(), getServiceInstanceInformation());
 	      return empInfo;
 	   }
 	  
-	  @RequestMapping("/employee/findTest/{id}")
-	   public EmployeeInfo findByIdTest(@PathVariable(value = "id") long id){
-		  Optional <Employee> emp = employeeRepository.findById(id);
-		  EmployeeInfo empInfo = new EmployeeInfo(emp.get().getId(),emp.get().getFirstname(),emp.get().getLastname(),emp.get().getRole(),emp.get().getManager(),emp.get().getPhone(),emp.get().getEmail(),emp.get().getAddress1(),emp.get().getAddress2(),emp.get().getCity(),emp.get().getState(),emp.get().getZip(),emp.get().getCountry(), getServiceInstanceInformation());
-	      return empInfo;
-	   }
-	   
 	   @RequestMapping("/employee/findall")
 	   public Collection<Employee> findAll(@RequestHeader("Authorization") String bearerToken){
+		  System.out.println("*********** STEP 3 - EMPLOYEE DETAILS SERVICE ****************");
 	      return employeeRepository.findAll();
 	   }
 

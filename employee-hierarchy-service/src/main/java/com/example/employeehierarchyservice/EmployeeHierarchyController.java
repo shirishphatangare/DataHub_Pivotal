@@ -30,6 +30,7 @@ public class EmployeeHierarchyController {
 			   
 		@RequestMapping("/manager/find/{manager}")
 		public List<Employee> findByManager(@PathVariable Long manager,@RequestHeader("Authorization") String bearerToken){
+			System.out.println("*********** STEP 3 - EMPLOYEE HIERARCHY SERVICE ****************");
 			List <Employee> emp = employeeRepository.findByManager(manager);
 			return emp;
 		}

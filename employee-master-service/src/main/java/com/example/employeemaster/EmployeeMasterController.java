@@ -25,7 +25,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 	    @HystrixCommand(fallbackMethod = "reliablefindmeFeign")
 	    @RequestMapping(value = "/dashboard-feign/{id}")
 	    public EmployeeInfo findmeFeign(@PathVariable Long id, @RequestHeader("Authorization") String bearerToken) {
-	    	System.out.println("Inside findmeFeign");
+	    	System.out.println("*********** STEP 2 - EMPLOYEE MASTER SERVICE ****************");
 	    	EmployeeInfo emp = employeeServiceProxy.getEmployeeData(id, bearerToken);
 	        return emp;
 	    }  
@@ -39,6 +39,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 	    @HystrixCommand(fallbackMethod = "reliablefindmanagerFeign")
 	    @RequestMapping(value = "/dashboard-feign/manager/{manager}")
 	    public List<Employee> findmanagerFeign(@PathVariable Long manager,@RequestHeader("Authorization") String bearerToken) {
+	    	System.out.println("*********** STEP 2 - EMPLOYEE MASTER SERVICE ****************");
 	    	List<Employee> empList = managerServiceProxy.getManagerData(manager,bearerToken);
 	        return empList;
 	    }
