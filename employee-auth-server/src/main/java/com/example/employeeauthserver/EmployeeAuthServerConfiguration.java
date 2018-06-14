@@ -9,14 +9,20 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @Configuration
 public class EmployeeAuthServerConfiguration extends GlobalAuthenticationConfigurerAdapter{
 
+	private final String USERNAME1 = "user1";
+	private final String PASSWORD1 = "password1";
+	private final String USERNAME2 = "user2";
+	private final String PASSWORD2 = "password2";
+	
+	
 
 	// Initialize user credentials - hardcoded for simplicity - JPA and DB can be used for production
 	@Override
 	public void init(AuthenticationManagerBuilder auth) throws Exception {
 		 BCryptPasswordEncoder encoder = passwordEncoder();
 		
-		auth.inMemoryAuthentication().passwordEncoder(passwordEncoder()).withUser("user1").password(encoder.encode("password1")).roles("USER").and().
-		withUser("user2").password(encoder.encode("password2")).roles("ADMIN");
+		auth.inMemoryAuthentication().passwordEncoder(passwordEncoder()).withUser(USERNAME1).password(encoder.encode(PASSWORD1)).roles("USER").and().
+		withUser(USERNAME2).password(encoder.encode(PASSWORD2)).roles("ADMIN");
 	}
 	
 	@Bean
