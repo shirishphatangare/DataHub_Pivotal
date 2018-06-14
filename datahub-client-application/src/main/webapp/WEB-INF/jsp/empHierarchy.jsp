@@ -24,7 +24,7 @@
 <table class="table table-striped">
     <thead>
     <tr>
-    <th scope="col" style="background-color: #cc66ff;">FedEx PeopleDirectory</th>
+    <th scope="col" style="background-color: #cc66ff;">Company PeopleDirectory</th>
     </tr>
     </thead>
     <tbody>
@@ -35,7 +35,7 @@
         <td>${manager.role}</td>
     </tr>
     <tr>
-    	<td><B>FedEx ID: </B> <a href="/empDetails/${manager.id}"> ${manager.id} </a></td>
+    	<td><B>Employee ID: </B> <a href="/empDetails/${manager.id}"> ${manager.id} </a></td>
     </tr>
     <tr>
     <th scope="col" style="background-color: #cc66ff;">Roster Information</th>
@@ -50,8 +50,8 @@
  	</c:forEach>
     </tbody>
   </table>
-	<a style="float:right" href="https://employee-master-service-dev.cfapps.io/swagger-ui.html">Swagger Documentation</a>
-	<a style="float:right" href="https://employee-master-service-dev.cfapps.io/hystrix">Hystrix DashBoard</a>
+	<a style="float:right;font-size: 15px; margin-left: 30px;" href="https://employee-master-service-dev.cfapps.io/swagger-ui.html">Swagger Documentation</a>
+	<a style="float:right;font-size: 15px;" href="https://employee-master-service-dev.cfapps.io/hystrix">Hystrix DashBoard</a>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="${pageContext.request.contextPath}/js/employeeDetails.js"></script>
 </body>

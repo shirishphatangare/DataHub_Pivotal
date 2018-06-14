@@ -36,7 +36,7 @@
         <td>${employee.role}</td>
     </tr>
     <tr>
-    	<td><B>FedEx ID: </B> <a href="/empDetails/${employee.id}"> ${employee.id} </a></td>
+    	<td><B>Employee ID: </B> <a href="/empDetails/${employee.id}"> ${employee.id} </a></td>
     </tr>
     
     <tr>
@@ -79,8 +79,8 @@
     
     </tbody>
   </table>
-	<a style="float:right" href="https://employee-master-service-dev.cfapps.io/swagger-ui.html">Swagger Documentation</a>
-	<a style="float:right" href="https://employee-master-service-dev.cfapps.io/hystrix">Hystrix DashBoard</a>
+	<a style="float:right;font-size: 15px; margin-left: 30px;" href="https://employee-master-service-dev.cfapps.io/swagger-ui.html">Swagger Documentation</a>
+	<a style="float:right;font-size: 15px;" href="https://employee-master-service-dev.cfapps.io/hystrix">Hystrix DashBoard</a>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="${pageContext.request.contextPath}/js/employeeDetails.js"></script>
