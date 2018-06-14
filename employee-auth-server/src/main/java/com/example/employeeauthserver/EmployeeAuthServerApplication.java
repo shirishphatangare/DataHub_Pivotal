@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class EmployeeAuthServerApplication {
 
 	public static void main(String[] args) {
-		System.out.println("Inside Auth server");
+		System.out.println("Inside Auth server...");
 		SpringApplication.run(EmployeeAuthServerApplication.class, args);
 	}
 	
