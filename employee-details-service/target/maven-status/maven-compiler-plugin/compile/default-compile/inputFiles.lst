@@ -1,6 +1,7 @@
-C:\DataHub_Pivotal\employee-data-service\src\main\java\com\example\employeedetailsservice\entity\Employee.java
-C:\DataHub_Pivotal\employee-data-service\src\main\java\com\example\employeedetailsservice\service\EmployeeRepository.java
-C:\DataHub_Pivotal\employee-data-service\src\main\java\com\example\employeedetailsservice\entity\EmployeeInfo.java
-C:\DataHub_Pivotal\employee-data-service\src\main\java\com\example\employeedetailsservice\EmployeeDetailsController.java
-C:\DataHub_Pivotal\employee-data-service\src\main\java\com\example\employeedetailsservice\EmployeeDetailsServiceApplication.java
-C:\DataHub_Pivotal\employee-data-service\src\main\java\com\example\employeedetailsservice\DataSourceConfig.java
+C:\DataHub_Workspace\employee-details-service\src\main\java\com\example\employeedetailsservice\controller\EmployeeDetailsController.java
+C:\DataHub_Workspace\employee-details-service\src\main\java\com\example\employeedetailsservice\model\EmployeeInfo.java
+C:\DataHub_Workspace\employee-details-service\src\main\java\com\example\employeedetailsservice\EmployeeDetailsServiceApplication.java
+C:\DataHub_Workspace\employee-details-service\src\main\java\com\example\employeedetailsservice\model\Employee.java
+C:\DataHub_Workspace\employee-details-service\src\main\java\com\example\employeedetailsservice\config\DataSourceConfig.java
+C:\DataHub_Workspace\employee-details-service\src\main\java\com\example\employeedetailsservice\repo\EmployeeDetailsRepository.java
+C:\DataHub_Workspace\employee-details-service\src\main\java\com\example\employeedetailsservice\service\EmployeeDetailsService.java

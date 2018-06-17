@@ -1,6 +1,7 @@
+com\example\employeedetailsservice\controller\EmployeeDetailsController.class
 com\example\employeedetailsservice\EmployeeDetailsServiceApplication.class
-com\example\employeedetailsservice\entity\EmployeeInfo.class
-com\example\employeedetailsservice\DataSourceConfig.class
-com\example\employeedetailsservice\service\EmployeeRepository.class
-com\example\employeedetailsservice\EmployeeDetailsController.class
-com\example\employeedetailsservice\entity\Employee.class
+com\example\employeedetailsservice\model\Employee.class
+com\example\employeedetailsservice\config\DataSourceConfig.class
+com\example\employeedetailsservice\repo\EmployeeDetailsRepository.class
+com\example\employeedetailsservice\model\EmployeeInfo.class
+com\example\employeedetailsservice\service\EmployeeDetailsService.class

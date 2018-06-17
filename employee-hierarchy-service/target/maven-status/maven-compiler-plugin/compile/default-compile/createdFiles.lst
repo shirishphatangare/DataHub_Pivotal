@@ -1,6 +1,6 @@
-com\example\employeehierarchyservice\entity\EmployeeInfo.class
+com\example\employeehierarchyservice\repo\EmployeeHierarchyRepository.class
+com\example\employeehierarchyservice\controller\EmployeeHierarchyController.class
 com\example\employeehierarchyservice\EmployeeHierarchyApplication.class
-com\example\employeehierarchyservice\entity\Employee.class
-com\example\employeehierarchyservice\service\EmployeeRepository.class
-com\example\employeehierarchyservice\EmployeeHierarchyController.class
-com\example\employeehierarchyservice\DataSourceConfig.class
+com\example\employeehierarchyservice\service\EmployeeHierarchyService.class
+com\example\employeehierarchyservice\model\Employee.class
+com\example\employeehierarchyservice\config\DataSourceConfig.class
