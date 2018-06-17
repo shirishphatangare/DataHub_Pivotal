@@ -18,5 +18,5 @@ IF %isPluginInstalled% == 0 (
 	cf install-plugin autopilot -r CF-Community -f
 )
 
-cd ./employee-master-service
-cf zero-downtime-push employee-master-service -f manifest.yml
+cd ./employee-details-service
+cf zero-downtime-push employee-details-service -f manifest.yml
