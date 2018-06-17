@@ -1,6 +1,5 @@
 package com.example.employeedetailsservice.controller;
 
-import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -19,6 +18,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.RequestBuilder;
@@ -29,10 +29,11 @@ import com.example.employeedetailsservice.model.Employee;
 import com.netflix.discovery.EurekaClient;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = EmployeeDetailsController.class, webEnvironment = RANDOM_PORT)
+@SpringBootTest(classes = EmployeeDetailsController.class)
 @ContextConfiguration(classes = EmployeeDetailsControllerTest.WebsocketSourceConfiguration.class)
 @AutoConfigureMockMvc(secure = false)
 @DataJpaTest
+@TestPropertySource(locations="classpath:test.properties")
 public class EmployeeDetailsControllerTest {
 	    
     @Autowired
@@ -68,5 +69,4 @@ public class EmployeeDetailsControllerTest {
 			return new TomcatServletWebServerFactory();
 		}
 	}
-
 }
