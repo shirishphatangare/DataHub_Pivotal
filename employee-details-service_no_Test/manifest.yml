@@ -1,5 +1,0 @@
-applications:
-- name: employee-details-service
-  path: ./target/employee-details-service-0.0.1-SNAPSHOT.jar
-  host: employee-details-service-dev
-  instances: 1
