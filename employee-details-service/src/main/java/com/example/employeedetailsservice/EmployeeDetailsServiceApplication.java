@@ -12,6 +12,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 public class EmployeeDetailsServiceApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Inside EmployeeDetailsServiceApplication..");
 		SpringApplication.run(EmployeeDetailsServiceApplication.class, args);
 	}
 
