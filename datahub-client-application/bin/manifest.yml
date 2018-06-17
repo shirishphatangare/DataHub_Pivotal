@@ -1,0 +1,5 @@
+applications:
+- name: datahub-client-application
+  path: ./target/datahub-client-application-0.0.1-SNAPSHOT.war
+  host: datahub-client-application-dev
+  instances: 1

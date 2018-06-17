@@ -1,0 +1,15 @@
+eureka:
+    instance:
+        appname: eureka-service
+    server:
+        enable-self-preservation: true
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+    dashboard:
+        path: /registry
+
+
+
+            
+            
