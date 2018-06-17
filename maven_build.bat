@@ -1,2 +1,2 @@
-cd ./employee-master-service
-mvn clean install -DskipTests
+cd ./employee-details-service
+mvn clean install
