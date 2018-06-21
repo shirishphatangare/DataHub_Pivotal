@@ -1,6 +1,0 @@
-applications:
-- name: auth-service
-  path: ./target/employee-auth-server-0.0.1-SNAPSHOT.jar
-  host: auth-service-dev
-  buildpack: https://github.com/cloudfoundry/java-buildpack
-  instances: 1

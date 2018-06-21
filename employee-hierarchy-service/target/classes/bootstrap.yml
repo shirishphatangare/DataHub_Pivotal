@@ -16,7 +16,7 @@ spring:
 security:
   oauth2:
     resource: 
-      user-info-uri: https://auth-service-dev.cfapps.io/service/user
+      user-info-uri: https://auth-service-dev.cfapps.io/user
 
 
 eureka:

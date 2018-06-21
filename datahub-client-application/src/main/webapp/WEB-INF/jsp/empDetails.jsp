@@ -79,9 +79,9 @@
     
     </tbody>
   </table>
+	<a style="float:right;font-size: 15px; margin-left: 30px;margin-right: 10px" href="https://auth-service-dev.cfapps.io/logout">Logout</a>
 	<a style="float:right;font-size: 15px; margin-left: 30px;" href="https://employee-master-service-dev.cfapps.io/swagger-ui.html">Swagger Documentation</a>
 	<a style="float:right;font-size: 15px;" href="https://employee-master-service-dev.cfapps.io/hystrix">Hystrix DashBoard</a>
-	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="${pageContext.request.contextPath}/js/employeeDetails.js"></script>
 </body>
