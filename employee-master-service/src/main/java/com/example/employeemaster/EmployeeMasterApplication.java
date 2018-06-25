@@ -15,7 +15,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 public class EmployeeMasterApplication {
 
 	public static void main(String[] args) {
-		System.out.println("Inside EmployeeMasterApplication...");
 		SpringApplication.run(EmployeeMasterApplication.class, args);
 	}
 	

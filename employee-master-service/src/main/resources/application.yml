@@ -1,12 +1,27 @@
 spring:
   application:
     name: employee-master-service
-    
+
 
 security:
   oauth2:
     resource: 
-      user-info-uri: https://auth-service-dev.cfapps.io/user
+      user-info-uri: https://employee-auth-service-dev.cfapps.io/user
+      token-info-uri: https://employee-auth-service-dev.cfapps.io/oauth/check_token
+    client:
+      client-id: employeeapp
+      client-secret: pass
+ 
+     
+
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include:  "*"
+
 
 eureka:
   client:
@@ -20,3 +35,8 @@ eureka:
     appname: employee-master-service
     
 
+logging: 
+  level: 
+    org: 
+      springframework: DEBUG
+    com: DEBUG

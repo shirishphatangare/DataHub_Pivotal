@@ -46,7 +46,7 @@ public class EmployeeHierarchyControllerTest {
 
         mvc.perform(requestBuilder)
         .andExpect(status().isOk())
-        .andExpect(jsonPath("$", hasSize(14)))
+        .andExpect(jsonPath("$", hasSize(12)))
         .andExpect(jsonPath("$[0].manager").value(expectedResult.getManager()));
     }
 	    

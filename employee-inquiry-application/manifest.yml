@@ -1,0 +1,6 @@
+applications:
+- name: employee-inquiry-application
+  path: ./target/employee-inquiry-application-0.0.1-SNAPSHOT.war
+  host: employee-inquiry-application-dev
+  buildpack: https://github.com/cloudfoundry/java-buildpack
+  instances: 1

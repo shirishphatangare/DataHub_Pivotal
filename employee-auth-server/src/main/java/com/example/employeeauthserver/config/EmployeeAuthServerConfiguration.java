@@ -6,6 +6,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
+import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 
 @Configuration
 @EnableAuthorizationServer
@@ -24,12 +25,16 @@ public class EmployeeAuthServerConfiguration extends AuthorizationServerConfigur
             .scopes(SCOPE).authorities("CLIENT");
     }
 	
+	
+	@Override 
+	   public void configure(AuthorizationServerSecurityConfigurer oauthServer) throws Exception { 
+	       oauthServer.checkTokenAccess("permitAll()"); 
+	   }
+	
 	@Bean
 	public static BCryptPasswordEncoder passwordEncoder() {
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		return encoder;
 	}
-
-
 	
 }
