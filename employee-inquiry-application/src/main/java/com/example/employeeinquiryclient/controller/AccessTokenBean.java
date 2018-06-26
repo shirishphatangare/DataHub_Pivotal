@@ -1,4 +1,4 @@
-package com.example.employeeinquiryclient;
+package com.example.employeeinquiryclient.controller;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;

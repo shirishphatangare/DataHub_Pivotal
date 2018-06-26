@@ -1,6 +1,6 @@
-package com.example.employeeinquiryclient;
+package com.example.employeeinquiryclient.model;
 
-public class Employee {
+public class EmployeeInfo {
 
 	private long id;
 	private String firstname;
@@ -15,13 +15,14 @@ public class Employee {
 	private String state;
 	private String zip;
 	private String country;
+	private String port;
 
-	protected Employee() {
+	protected EmployeeInfo() {
 
 	}
 
-	public Employee(long id, String firstname, String lastname, String role, long manager, String phone, String email,
-			String address1, String address2, String city, String state, String zip, String country) {
+	public EmployeeInfo(long id, String firstname, String lastname, String role, long manager, String phone, String email,
+			String address1, String address2, String city, String state, String zip, String country,String port) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
@@ -36,6 +37,7 @@ public class Employee {
 		this.state = state;
 		this.zip = zip;
 		this.country = country;
+		this.port = port;
 	}
 
 	public long getId() {
@@ -140,6 +142,14 @@ public class Employee {
 
 	public void setCountry(String country) {
 		this.country = country;
+	}
+
+	public String getPort() {
+		return port;
+	}
+
+	public void setPort(String port) {
+		this.port = port;
 	}
 
 	
