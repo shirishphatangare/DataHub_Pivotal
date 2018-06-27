@@ -46,7 +46,7 @@
 	                <input type="hidden" name="redirect_uri" value="https://employee-inquiry-application-dev.cfapps.io/index" />
 	               <!--   <input type="hidden" name="redirect_uri" value="http://localhost:8082/index" /> -->
 	                <input type="hidden" name="scope" value="read" /> 
-	                <input type="SUBMIT" class="btn btn-info" value="Login using Employee Auth Service" style="margin-top:10px;margin-right:10px;padding-top:5px;"/>
+	                <input type="SUBMIT" class="btn btn-info" value="Login using Employee Auth Service" style="font-weight: bold;margin-top:10px;margin-right:10px;padding-top:5px;"/>
 		        </form:form>
 	    	</div>
     	</li>

@@ -40,8 +40,8 @@
           <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="/index">Home</a></li>
-        <li><a  href="https://employee-master-service-dev.cfapps.io/hystrix">Hystrix DashBoard</a></li>
-        <li><a  href="https://employee-master-service-dev.cfapps.io/swagger-ui.html">Swagger Documentation</a></li>
+        <li><a target="_blank"  href="https://employee-master-service-dev.cfapps.io/hystrix">Hystrix DashBoard</a></li>
+        <li><a target="_blank" href="https://employee-master-service-dev.cfapps.io/swagger-ui.html">Swagger Documentation</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact Us</a></li>
         <li><a  href="${pageContext.request.contextPath}/logout">Logout</a></li>
@@ -49,7 +49,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li style="margin-top:5px;margin-right:5px;padding-top:5px;">		  <div class="form-inline">
 	    <input class="form-control mr-sm-2" id="employeeid" type="text" placeholder="Enter Emp id" aria-label="Search">
-	    <button class="btn btn-info my-2 my-sm-0" onclick="getEmployeeDetails()">Go</button>
+	    <button class="btn btn-info my-2 my-sm-0" style="font-weight: bold;" onclick="getEmployeeDetails()">Go</button>
 	  </div></li>
       </ul>
     </div> 

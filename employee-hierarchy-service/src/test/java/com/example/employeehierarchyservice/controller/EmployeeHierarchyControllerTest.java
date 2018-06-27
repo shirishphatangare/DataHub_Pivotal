@@ -17,6 +17,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.http.MediaType;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -36,7 +37,7 @@ public class EmployeeHierarchyControllerTest {
     @Autowired
     private MockMvc mvc;
     
-    Employee expectedResult = new Employee(5154048, "Angelsungv", "Soutsavang", "Business Application Analyst",97867,"+1(808) 838-6132","Angelsungv.Soutsavang@abc.com","129 Pohakulana Pl", "SECOND FLOOR - DEV","Honolulu","HI","96819","USA");
+    Employee expectedResult = new Employee(5154048, "Angelsungv", "Soutsavang", "Sr. Architect",97867,"+1(808) 838-6132","Angelsungv.Soutsavang@abc.com","129 Pohakulana Pl", "SECOND FLOOR - DEV","Honolulu","HI","96819","USA");
     
     @Test
     public void getEmployeeDetails() throws Exception {
@@ -55,6 +56,7 @@ public class EmployeeHierarchyControllerTest {
 	@EnableJpaRepositories("com.example.employeehierarchyservice.repo")
 	@EntityScan("com.example.employeehierarchyservice.model")
 	@EnableWebMvc
+	@EnableGlobalMethodSecurity
 	public static class WebsocketSourceConfiguration {
 		@Bean 
 		ServletWebServerFactory servletWebServerFactory(){
