@@ -39,7 +39,6 @@
           <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="/index">Home</a></li>
-        <!--  <li><a target="_blank" href="https://employee-master-service-dev.cfapps.io/hystrix">Hystrix DashBoard</a></li> -->
         <li><a target="_blank" href="https://employee-master-service-dev.cfapps.io/hystrix/monitor?stream=https://employee-master-service-dev.cfapps.io/actuator/hystrix.stream">Hystrix DashBoard</a></li>
         <li><a target="_blank" href="https://employee-master-service-dev.cfapps.io/swagger-ui.html">Swagger Documentation</a></li>
         <li><a href="#">About</a></li>

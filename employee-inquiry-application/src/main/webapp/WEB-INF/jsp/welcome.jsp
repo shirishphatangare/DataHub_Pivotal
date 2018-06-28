@@ -60,9 +60,9 @@
 </div> 
     <div class="col-sm-8 text-justify"> 
       <h1>Welcome</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>The Employee Inquiry application uses ZUUL API gateway as an edge service that provides dynamic routing and logging. 'Employee Master' microservice is a dashboard service which internally communicates with 'Employee Details' and 'Employee Hierarchy' microservies. 'Employee Master' microservice uses Feign client to call REST endpoints of 'Employee Details' and 'Employee Hierarchy' microservices. Authentication and authorization is controlled using OAuth2.0 protocol. Employee Inquiry application features Hystrix dashboard and Swagger documentation. The Hystrix Dashboard facilitates monitoring Hystrix metrics in real time. Swagger takes the manual work out of API documentation, with a range of solutions for generating, visualizing, and maintaining API docs. Configuration microservice allows database configurations for dev-prod profiles. Eureka Service registry is primarily used in the cloud for service discovery, for the purpose of load balancing and failover of middle-tier servers.</p>
       <hr>
-      <img src="${pageContext.request.contextPath}/images/employee-data.jpg" width="100%" height="460"  alt="Responsive image">
+      <img src="${pageContext.request.contextPath}/images/employee-data.jpg" width="100%" height="400"  alt="Responsive image">
       </div>
  <div class="col-sm-2 sidenav">
 </div>      
