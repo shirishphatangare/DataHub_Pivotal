@@ -13,8 +13,6 @@ security:
       client-secret: pass
  
      
-
-
 management:
   endpoints:
     web:
